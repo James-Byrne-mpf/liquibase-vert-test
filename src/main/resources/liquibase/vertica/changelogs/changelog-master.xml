@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <!-- Note: the loader knows how to find the files relative to classpath which results in nice file names -->
+
+    <include file="01-create-sod.sql" relativeToChangelogFile="true"/>
+    <include file="02-alter-sod.sql" relativeToChangelogFile="true"/>
+    <include file="03-alter-sod.sql" relativeToChangelogFile="true"/>
+</databaseChangeLog>
