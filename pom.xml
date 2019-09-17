@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <artifactId>liquibase-test</artifactId>
     <groupId>gerbs</groupId>
-    <version>0.0.0-2-SNAPSHOT</version>
+    <version>0.0.0-3-SNAPSHOT</version>
     <modelVersion>4.0.0</modelVersion>
 
     <packaging>jar</packaging>
@@ -90,10 +90,25 @@
         </repository>
     </repositories>
 
+    <distributionManagement>
+        <repository>
+            <id>turbine</id>
+            <name>turbine_releases</name>
+            <url>http://artifactory-repo-1-na-prod.mplatform.com/artifactory/libs-release-local</url>
+        </repository>
+        <snapshotRepository>
+            <id>turbine</id>
+            <name>turbine_snapshots</name>
+            <url>http://artifactory-repo-1-na-prod.mplatform.com/artifactory/libs-snapshot-local</url>
+            <uniqueVersion>true</uniqueVersion>
+        </snapshotRepository>
+    </distributionManagement>
+
     <scm>
         <url>https://github.com/James-Byrne-mpf/liquibase-vert-test</url>
         <connection>scm:git:git@github.com:James-Byrne-mpf/liquibase-vert-test.git</connection>
         <developerConnection>scm:git:git@github.com:James-Byrne-mpf/liquibase-vert-test.git</developerConnection>
+    <tag>HEAD</tag>
   </scm>
 
 </project>
