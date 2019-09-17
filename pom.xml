@@ -15,7 +15,7 @@
         <dependency>
             <groupId>org.liquibase.ext</groupId>
             <artifactId>liquibase-verticaDatabase</artifactId>
-            <version>1.2-1</version>
+            <version>1.2-2</version>
         </dependency>
         <dependency>
             <groupId>ch.qos.logback</groupId>
@@ -30,7 +30,7 @@
         <dependency>
             <groupId>com.vertica</groupId>
             <artifactId>vertica-jdbc</artifactId>
-            <version>8.1.1-18</version>
+            <version>8.1.1</version>
         </dependency>
         <dependency>
             <groupId>commons-io</groupId>
@@ -79,7 +79,7 @@
         <repository>
             <id>turbine</id>
             <name>Turbine Repository</name>
-            <url>http://svn.dc5c.test.247media.com:8081/artifactory/repo</url>
+            <url>http://artifactory-repo-1-na-prod.mplatform.com/artifactory/repo</url>
             <releases>
                 <enabled>true</enabled>
                 <updatePolicy>never</updatePolicy>
@@ -89,4 +89,12 @@
             </snapshots>
         </repository>
     </repositories>
+
+    <scm>
+        <url>https://github.com/James-Byrne-mpf/liquibase-vert-test</url>
+        <connection>scm:git:git@github.com:James-Byrne-mpf/liquibase-vert-test.git</connection>
+        <developerConnection>scm:git:git@github.com:James-Byrne-mpf/liquibase-vert-test.git</developerConnection>
+      <tag>HEAD</tag>
+  </scm>
+
 </project>
