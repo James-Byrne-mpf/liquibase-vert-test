@@ -94,7 +94,6 @@
         <url>https://github.com/James-Byrne-mpf/liquibase-vert-test</url>
         <connection>scm:git:git@github.com:James-Byrne-mpf/liquibase-vert-test.git</connection>
         <developerConnection>scm:git:git@github.com:James-Byrne-mpf/liquibase-vert-test.git</developerConnection>
-      <tag>liquibase-test-0.0.0-1</tag>
   </scm>
 
 </project>
